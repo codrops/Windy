@@ -1,0 +1,51 @@
+.windy-demo {
+	width: 416px;
+	margin: 40px auto;
+	color: #aaa;
+}
+
+.windy-demo ul.wi-container {
+	width: 420px;
+	height: 320px;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.windy-demo h4 {
+	padding: 0 10px;
+	line-height: 26px;
+	margin: 0;
+}
+
+.windy-demo ul.wi-container li {
+	padding: 0;
+	border: 10px solid #fff;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#slider {
+	width: 200px;
+	margin: 50px auto 0;
+	border-radius: 10px;
+	border: none;
+	box-shadow: 0 1px 1px rgba(255,255,255,0.8), inset 0 1px 2px rgba(0,0,0,0.3), 0 0 0 8px rgba(0,0,0,0.1), 0 1px 1px 8px rgba(255, 255, 255, 0.8);
+	background: #b0d4e3;
+background: -moz-linear-gradient(top, #b0d4e3 0%, #88bacf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b0d4e3), color-stop(100%,#88bacf));
+background: -webkit-linear-gradient(top, #b0d4e3 0%,#88bacf 100%);
+background: -o-linear-gradient(top, #b0d4e3 0%,#88bacf 100%);
+background: -ms-linear-gradient(top, #b0d4e3 0%,#88bacf 100%);
+background: linear-gradient(to bottom, #b0d4e3 0%,#88bacf 100%);
+}
+
+#slider a {
+	outline: none;
+	cursor: pointer;
+	border: none;
+	background: white;
+	border-radius: 50%;
+	box-shadow: 0 3px 4px rgba(0,0,0,0.4);
+}

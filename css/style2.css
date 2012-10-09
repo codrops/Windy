@@ -1,0 +1,94 @@
+.windy-demo {
+	width: 220px;
+	margin: 40px auto;
+	color: #aaa;
+}
+
+.windy-demo ul.wi-container {
+	width: 220px;
+	height: 400px;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.windy-demo li img {
+	display: block;
+}
+
+.windy-demo h4 {
+	padding: 0 10px;
+	line-height: 74px;
+	margin: 0;
+	color: #ccc;
+	text-align: center;
+}
+
+.windy-demo ul.wi-container:before,
+.windy-demo ul.wi-container:after{
+	content: '';
+	position: absolute;
+	z-index: -2;
+	bottom: 15px;
+	left:  10px;
+	width: 50%;
+	height: 20%;
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+
+.windy-demo ul.wi-container:after {
+	right: 10px;
+	left: auto;
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	transform: rotate(3deg);
+}
+
+.windy-demo ul.wi-container li {
+	padding: 0;
+	border: 10px solid #DDD;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+.windy-demo nav {
+	position: relative;
+	width: 100px;
+	margin: 0 auto;
+}
+
+.windy-demo nav span {
+	width: 42px;
+	height: 42px;
+	margin: 0 4px;
+	float: left;
+	background: url(../images/nav.png) no-repeat 100% 0;
+	text-indent: -9000px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.windy-demo nav span:first-child {
+	background-position: 0 0;
+}
+
+.windy-demo nav span:active {
+	background-position: 100% 2px;
+}
+
+.windy-demo nav span:first-child:active {
+	background-position: 0 2px;
+}
