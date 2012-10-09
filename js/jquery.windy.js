@@ -161,28 +161,19 @@
 					opacity : 0
 				},
 				styleStart = {
-						opacity : 1
+					opacity : 1
 				};
 
-			if( self.support3d ) {
+			if( this.support3d ) {
 
 				styleStart.transform = self.resetTransformStr;
-
-			}
-			else if( self.supportTransitions ) {
-
-				styleStart.left = 0;
-				styleStart.top = 0;
-
-			}
-
-			if( this.support3d ) {
-				
 				styleEnd.transform = 'translateX(' + randTranform.tx + 'px) translateY(' + randTranform.ty + 'px) translateZ(' + randTranform.tz + 'px) rotateX(' + randTranform.rx + 'deg) rotateY(' + randTranform.ry + 'deg) rotateZ(' + randTranform.rz + 'deg)';
-			
+
 			}
 			else if( this.supportTransitions ) {
 
+				styleStart.left = 0;
+				styleStart.top = 0;
 				styleEnd.left = randTranform.tx;
 				styleEnd.top = randTranform.ty;
 
