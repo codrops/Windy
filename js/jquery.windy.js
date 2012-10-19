@@ -19,6 +19,7 @@
 	$.Windy = function( options, element ) {
 		
 		this.$el = $( element );
+		this.$elname = element;
 		this._init( options );
 		
 	};
@@ -264,7 +265,15 @@
 
 			}
 
-		}
+		},
+	
+	  	// public method: dynamically updates elements list (used in AJAX)
+	        update : function () {
+
+	            this.$items = $( this.$elname ).children( 'li' );
+	            this.itemsCount = this.$items.length;
+
+	        }
 
 	};
 	
