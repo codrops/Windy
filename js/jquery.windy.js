@@ -19,7 +19,6 @@
 	$.Windy = function( options, element ) {
 		
 		this.$el = $( element );
-		this.$elname = element;
 		this._init( options );
 		
 	};
@@ -268,26 +267,14 @@
 		},
 	
 	  	// public method: dynamically updates elements list (used in AJAX)
-	        update : function () {
+		update : function () {
 
-			var $old_current_el = this.$items.eq( this.current );
-
-			this.$items = $( this.$elname ).children( 'li' );
+			var $currentItem = this.$items.eq( this.current );
+			this.$items = this.$el.children( 'li' );
 			this.itemsCount = this.$items.length;
+			this.current = $currentItem.index();
 
-			// if new element was prepended into <ul> we have to recalculate current index
-			for( var i = 0; i < this.$items.length; i++ ) {
-
-			    if( this.$items[i] == $old_current_el[0] ) {
-
-				this.current = i;
-				break;
-
-			    }
-
-			}
-
-	        }
+		}
 
 	};
 	
