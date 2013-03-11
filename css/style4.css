@@ -1,0 +1,54 @@
+ul#wi-el {
+    width: 640px;
+    margin:0 auto;
+    position: relative;
+    height: 618px;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #000;
+}
+ul#wi-el li {
+    position: absolute;
+    top: 0px;
+    display: none;
+    background-color: #fff;
+}
+ul#wi-el img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+ul#wi-el p {
+    float: left;
+    width: 230px;
+}
+ul#wi-el .bio_text {
+    width: 280px;
+    height: 500px;
+    float: right;
+}
+ul#wi-el .bio_text p {
+    float: left;
+    width: 48%;
+    margin-right: 5px;
+}
+ul.wi-container li.wi-move {
+    pointer-events: none;
+    -webkit-transition: -webkit-transform 600ms ease, opacity 600ms ease, left 600ms ease, top 600ms ease;
+    -moz-transition: -moz-transform 600ms ease, opacity 600ms ease, left 600ms ease, top 600ms ease;
+    -o-transition: -o-transform 600ms ease, opacity 600ms ease, left 600ms ease, top 600ms ease;
+    -ms-transition: -ms-transform 600ms ease, opacity 600ms ease, left 600ms ease, top 600ms ease;
+    transition: transform 600ms ease, opacity 600ms ease, left 600ms ease, top 600ms ease;
+}
+ul.bio_thumbnails {
+    width: 620px;
+    margin:0 auto;
+}
+ul.bio_thumbnails li {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+}
+ul.bio_thumbnails img {
+    width: 100px;
+    height: 100px;
+}
